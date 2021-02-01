@@ -1,0 +1,72 @@
+
+/* sub.css(서브 페이지용) */
+
+/* 오시는 길 */
+#location > #main > section > header {
+    width: 100%;
+    height: 100px;
+    background: #ccc;
+  }
+  
+  #location > #main > section > header > h1 {
+    line-height: 100px;
+  }
+  
+  #location > #main #map {
+    width: 100%;
+    height: 460px;
+    background: #ccc;
+  }
+  #about1 {
+    position: relative;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  /*  표  */
+
+  .table1 {
+    border: 1px solid black;
+    caption-side: bottom;
+    border-collapse: collapse;
+    border-spacing: 10px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    width: 100%;
+    
+}
+
+
+  td {
+  font-size: 12px;
+  border: 1px dotted black;
+  text-align: center;
+  vertical-align: middle;
+  border-spacing: 10px;
+  }
+
+  th {
+  border: 1px dotted black;
+  font-size: 13.5px;
+  text-align: left;
+  vertical-align: middle;
+  border-spacing: 10px;
+
+  }
+
+  td, th {
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+   h2 {
+    font-size: 24px;
+  }
+  
+  /* 지도 */
+
+  #map {
+    margin-top: 40px;
+  }
+

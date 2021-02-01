@@ -1,0 +1,32 @@
+#main {
+    position: relative;
+    width: 100%;
+}
+
+#introduce{
+    background-image: url(./img/background.png);
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+}
+
+h2, p {
+    color: #fff;
+}
+
+h2 {
+    font-size: 24px;
+
+}
+
+.font_size {
+    font-size: 17px;
+    font-family: "Noto+Sans+KR";
+    font-weight: lighter;
+}
+
+p {
+    font-family: "Noto+Sans+KR";
+    font-weight: lighter;
+    font-size: 12px;
+}

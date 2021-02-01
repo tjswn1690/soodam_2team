@@ -1,0 +1,378 @@
+/* style.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+body {
+  color: #333;
+  /* 400 regular, 500 medium, bold 700 */
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 14px;
+  line-height: 1.6em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* 헤더 */
+#main_header {
+  position: relative;
+  background-image: url(./img/header.png);
+  height: 100%;
+  height: 68px;
+  text-align: center;
+}
+
+#main_header > h1 {
+  padding-top: 10px;
+}
+
+#main_header > h1 img {
+  width: 170px;
+  height: 60px;  
+}
+
+#main_header > .btn_toggle {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 32px;
+  height: 32px;
+  background: none;
+  border: none;
+}
+
+#main_header .btn_right {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 80px;
+  height: 30px;
+  background: #E4130C;
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+#main_visual > .slider > img {
+  width: 100%;
+  display: block;
+}
+
+#about {
+    position: relative;
+    width: 100%;
+}
+
+#about > h2 {
+  font-size: 16px;
+  margin-bottom: 13px;
+}
+
+#service {
+  background: #fff;
+  overflow: hidden;
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+#service ul li {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+}
+#service ul li > a {
+  /* outline: 1px solid red; */
+  display: inline-block;
+  height: 47px;
+  line-height: 47px;
+}
+#service ul li > a > img {
+  vertical-align: middle;
+}
+
+#brand {
+  padding-bottom: 56px;
+}
+
+#brand > h2 {
+  margin-bottom: 15px;
+}
+
+#brand > div {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  /* outline: 1px solid red; */
+  margin-bottom: 15px;
+}
+#service ul li > p {
+  padding: 10px;
+}
+
+#brand > div > iframe {
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#main_footer {
+  background: #030303;
+  color: #fff;
+  padding-top: 56px;
+  padding-bottom: 56px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#main_footer .sns img{
+  margin-left: 13px;
+  margin-right: 13px;
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+}
+
+#main_footer .tel {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+#main_footer .tel a {
+  color: #fff;
+}
+#main_footer .tel span,
+#main_footer .info,
+#main_footer .copy {
+  font-family: "Noto+Sans+KR";
+  font-size: 12px;
+  font-weight: 400;
+}
+
+#main_footer .info {
+  margin-bottom: 18px;
+}
+
+
+/* 메인 메뉴 */
+#gnb {
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  background: #fff;
+  left: 0; top: 0;
+  z-index: 999;
+  box-shadow: 2px 0px 6px rgba(248, 248, 248, 0.2);
+  display: none;
+}
+
+#gnb > div {
+  height: 68px;
+  /* outline: 1px solid red; */
+}
+
+#gnb .btn_close {
+  position: absolute;
+  right: 20px; top: 20px;
+  width: 32px;
+  height: 32px;
+  /* background: none;  */
+  border: none;  
+}
+
+#gnb > ul > li {
+  /*outline: 1px solid #ccc;*/
+  padding: 10px 20px;
+  text-align: center;
+  font-weight: 500;
+}
+
+
+
+/* 배인배너 슬라이더 이미지 영역 */
+.slider {
+  width: 100%;
+  /* height: calc(100vh - 68px); */
+  padding-top: 161.35%;
+  position: relative;
+}
+
+/* 클래스로 이미지의 상태를 정의 */
+.slider > img {
+  position: absolute;
+  left: 0; top: 0;
+  opacity: 0;
+  transition-duration: 1s;
+}
+
+.slider > img.show {
+  opacity: 1;
+}
+
+/* 호버1 */
+
+.hover001 {
+  overflow: hidden;
+  margin-top: 30px;
+
+
+}
+.service01 > li {
+display: inline-table;
+position: relative;
+overflow: hidden;
+
+}
+.service01 > li:last-child {
+  margin-right: 0;
+}
+
+.service01 > li > .caption {
+  position: absolute;
+  width: 150px; height: 110px;
+  background: rgba(0, 0, 0, 0.6);
+  top: 200px;
+  color: #fff;
+  text-align: center;
+  padding-top: 40px;
+  box-sizing: border-box;
+  transition: 0.4s;
+  opacity: 0;
+}
+
+.service01 > li:hover .caption {
+  /* top: 0; */
+  transform: translateY(-200px);
+  opacity: 1;
+}
+
+.service01 > li > img {
+  width: 150px;
+  height: 110px;
+}
+
+.hover001 > h1 {
+  margin-bottom: 25px;
+}
+
+/*  호버2  */
+
+.service02 > li {
+  display: inline-table;
+  position: relative;
+  overflow: hidden;
+  
+  }
+  .service02 > li:last-child {
+    margin-right: 0;
+  }
+  
+  .service02 > li > .caption {
+    position: absolute;
+    width: 150px; height: 110px;
+    background: rgba(0, 0, 0, 0.6);
+    top: 200px;
+    color: #fff;
+    text-align: center;
+    padding-top: 40px;
+    box-sizing: border-box;
+    transition: 0.4s;
+    opacity: 0;
+  }
+  
+  .service02 > li:hover .caption {
+    /* top: 0; */
+    transform: translateY(-200px);
+    opacity: 1;
+  }
+  
+  .service02 > li > img {
+    width: 150px;
+    height: 110px;
+  }
+
+  /* 호버3 */
+
+  .service03 > li {
+    display: inline-table;
+    position: relative;
+    overflow: hidden;
+    
+    }
+    .service03 > li:last-child {
+      margin-right: 0;
+    }
+    
+    .service03 > li > .caption {
+      position: absolute;
+      width: 150px; height: 110px;
+      background: rgba(0, 0, 0, 0.6);
+      top: 200px;
+      color: #fff;
+      text-align: center;
+      padding-top: 40px;
+      box-sizing: border-box;
+      transition: 0.4s;
+      opacity: 0;
+    }
+    
+    .service03 > li:hover .caption {
+      /* top: 0; */
+      transform: translateY(-200px);
+      opacity: 1;
+    }
+    
+    .service03 > li > img {
+      width: 150px;
+      height: 110px;
+    }
+
+
+
+/* 메인 아이콘 */
+
+#main_icon > .icon img {
+  width: 60px;
+  height: 65px;
+  display: inline-block;
+}
+
+#main_icon {
+  overflow: hidden;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+
+.icon ul li {
+  float: left;
+  width: 24.33%;
+  text-align: center;
+  
+}
+.icon ul li p {
+  font-size: 12px;
+  text-align: center;
+
+}
+
+.individual {
+  margin-top: 30PX;
+}
